@@ -1,0 +1,30 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pudry <pudry@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/01/10 14:46:08 by pudry             #+#    #+#             */
+/*   Updated: 2024/01/10 16:30:15 by pudry            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef __CAT__HPP
+# define __CAT__HPP
+
+#include <iostream>
+#include "Animal.hpp"
+
+class Cat : public Animal
+{
+	public:
+		Cat(void);
+		~Cat(void);
+		Cat(const Cat &src);
+
+		Cat		&operator=(Cat const &src);
+		void	makeSound(void) const;
+};
+
+#endif
